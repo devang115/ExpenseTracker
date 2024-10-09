@@ -80,7 +80,7 @@ const ExpenseList: React.FC<{ expenses: Expense[] }> = ({ expenses }) => {
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                   />
                 ) : (
-                  `$${typeof expense.amount === 'number' ? expense.amount.toFixed(2) : '0.00'}`
+                  `₹${typeof expense.amount === 'number' ? expense.amount.toFixed(2) : '0.00'}`
                 )}
               </td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
